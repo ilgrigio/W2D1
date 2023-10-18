@@ -1,4 +1,4 @@
-//ESERCIZI SUGLI IF: 
+//ESERCIZI SUGLI IF:
 
 /* ESERCIZIO 1
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
@@ -45,7 +45,7 @@ ESERCIZIO 2
 //   console.log("Huge");
 // }
 
-//ESERCIZI SUI CICLI: 
+//ESERCIZI SUI CICLI:
 
 /* ESERCIZIO 3
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
@@ -69,9 +69,8 @@ ESERCIZIO 2
 //     console.log(num, "è un numero pari");
 //   } else {
 //     console.log (num, "è un numero dispari")
-//   } 
+//   }
 // }
-
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -120,15 +119,22 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart = 53
+let totalShoppingCart = 53;
 // let totalShoppingCart = 43
-let scontoBlackFriday = (totalShoppingCart / 100) * 20
-let totale = totalShoppingCart - scontoBlackFriday
+let scontoBlackFriday = (totalShoppingCart / 100) * 20;
+let totale = totalShoppingCart - scontoBlackFriday;
 
 if (totale > 50) {
-  console.log(totale, "Complimenti! La tua spedizione sarà gratuita!")
+  console.log(totale, "Complimenti! La tua spedizione sarà gratuita!");
 } else {
-  console.log("Il tuo totale da pagare è", totale, "più", + 10, "di spedizione", totale + 10)
+  console.log(
+    "Il tuo totale da pagare è",
+    totale,
+    "più",
+    +10,
+    "di spedizione",
+    totale + 10
+  );
 }
 
 /*  ESERCIZIO EXTRA 4
@@ -143,8 +149,8 @@ if (totale > 50) {
 // }
 // let isMale = true
 // gender.isMale === true? console.log ("Gender is male"):console.log ("Gender is female")
-let isMale = false
-let gender
+let isMale = false;
+let gender;
 // isMale ? gender = console.log("Il genere è male") :  gender = console.log("Il genere è female");
 gender = isMale ? "è uomo" : "è donna";
 console.log(gender);
