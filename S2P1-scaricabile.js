@@ -28,7 +28,7 @@ ESERCIZIO 2
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 // let num = 5
-let num = 9
+// let num = 9
 // let num = 13
 // let num = 18
 // let num = 21
@@ -126,9 +126,9 @@ let scontoBlackFriday = (totalShoppingCart / 100) * 20
 let totale = totalShoppingCart - scontoBlackFriday
 
 if (totale > 50) {
-  console.log (totale, "Complimenti! La tua spedizione sarà gratuita!")
+  console.log(totale, "Complimenti! La tua spedizione sarà gratuita!")
 } else {
-  console.log ("Il tuo totale da pagare è", totale, "più", + 10, "di spedizione", totale + 10)
+  console.log("Il tuo totale da pagare è", totale, "più", + 10, "di spedizione", totale + 10)
 }
 
 /*  ESERCIZIO EXTRA 4
@@ -145,8 +145,21 @@ if (totale > 50) {
 // gender.isMale === true? console.log ("Gender is male"):console.log ("Gender is female")
 let isMale = false
 let gender
-isMale === true? gender =  console.log ("Il genere è male") :  gender = console.log ("Il genere è female");
-
+// isMale ? gender = console.log("Il genere è male") :  gender = console.log("Il genere è female");
+gender = isMale ? "è uomo" : "è donna";
+console.log(gender);
 /* ESERCIZIO EXTRA 5
-  Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
+  Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 
+  (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". 
+  Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+
+for (let numero = 0; numero <= 100; numero++) {
+  if (numero % 3 === 0 && numero % 8 === 0) {
+    console.log("FizzBuzz");
+  } else if (numero % 3 === 0) {
+    console.log("Fizz");
+  } else if (numero % 8 === 0) {
+    console.log("Buzz");
+  } else console.log(numero);
+}
